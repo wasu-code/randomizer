@@ -1,0 +1,64 @@
+body {
+    background-color:#000000;
+    background-image: url("https://pararium.com/wp-content/uploads/imgs/9/6/96227d63.gif");
+    color: white;
+}
+
+.center {
+    text-align: center;
+}
+
+.stickyInfo {
+    position:sticky; 
+    bottom:10px; 
+    text-align:center;
+}
+
+.rotationX {
+    transform: rotateX(360deg);
+}
+
+.rotationY {
+    transform: rotateY(360deg);
+}
+
+.block1 {
+    height:50px; 
+    padding-top:30px;
+    background-color:#B3B3B3;
+    text-align:center;
+    color:black;
+}
+
+.block2 {
+    height:100px; 
+    padding-top:30px;
+    /*background-color:#FFFFFF;*/
+    text-align:center;
+    color: white;
+}
+
+.block3 {
+    height:50px;
+    padding-top:30px;
+    text-align:center;
+    width:49%;
+    display:inline-block;
+    background-color:#B3B3B3;
+    color:black;
+}
+
+.block4 {
+    height:50px;
+    padding-top:30px;
+    text-align:center;
+    width:49%;
+    display:inline-block;
+    background-color:#FFFFFF;
+    color:black;
+}
+
+.data_input {
+    border: 1px dotted white;
+    padding: 2px;
+}
