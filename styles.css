@@ -1,7 +1,7 @@
 body {
     background-color:#000000;
     background-image: url("https://pararium.com/wp-content/uploads/imgs/9/6/96227d63.gif");
-    color: white;
+    color: whitesmoke;
 }
 
 .center {
@@ -35,7 +35,7 @@ body {
     padding-top:30px;
     /*background-color:#FFFFFF;*/
     text-align:center;
-    color: white;
+    color: whitesmoke;
 }
 
 .block3 {
@@ -54,11 +54,11 @@ body {
     text-align:center;
     width:49%;
     display:inline-block;
-    background-color:#FFFFFF;
-    color:black;
+    background-color:whitesmoke;
+    color:#23272a;
 }
 
 .data_input {
-    border: 1px dotted white;
+    border: 1px dotted whitesmoke;
     padding: 2px;
 }
