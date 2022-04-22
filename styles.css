@@ -60,3 +60,13 @@ body {
     border: 1px dotted whitesmoke;
     padding: 2px;
 }
+
+.mobile-filler {
+    height: 0;
+}
+
+@media (pointer:coarse) { /*inaccurate pointing device - here: detect touchscreen*/
+    .mobile-filler {
+        height: 70%;
+    }
+}
