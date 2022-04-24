@@ -90,3 +90,10 @@ function startYRotate() {
 		nextAllowed=true;
 	}
 }
+
+////for mobile soft keyboard
+window.addEventListener('native.keyboardshow',function(e) {
+	setTimeout(function() {
+		document.activeElement.scrollIntoViewIfNeeded();
+	}, 100);
+});
