@@ -67,6 +67,6 @@ body {
 
 @media (pointer:coarse) { /*inaccurate pointing device - here: detect touchscreen*/
     .mobile-filler {
-        height: 70%;
+        height: 50%;
     }
 }
