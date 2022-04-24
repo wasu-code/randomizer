@@ -61,12 +61,8 @@ body {
     padding: 2px;
 }
 
-.mobile-filler {
-    height: 0;
-}
-
 @media (pointer:coarse) { /*inaccurate pointing device - here: detect touchscreen*/
-    .mobile-filler {
-        height: 50%;
+    .settings {
+        min-height: 90%;
     }
 }
