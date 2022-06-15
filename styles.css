@@ -1,7 +1,17 @@
 body {
     background-color:#000000;
-    background-image: url("https://pararium.com/wp-content/uploads/imgs/9/6/96227d63.gif");
+    /*background-image: url("https://pararium.com/wp-content/uploads/imgs/9/6/96227d63.gif");*/
     color: whitesmoke;
+    box-sizing: border-box;
+}
+
+#page-content {
+    margin: 8px;
+}
+
+#blocks {
+    text-align: center;
+    padding-top: 1em;
 }
 
 .center {
@@ -32,12 +42,16 @@ body {
 
 .block1 {
     height:50px; 
+    width: 98%;
+    margin: auto;
     background-color:#B3B3B3;
     color:black;
 }
 
 .block2 {
     height:100px; 
+    width: 98%;
+    margin: auto;
     color: whitesmoke;
 }
 
