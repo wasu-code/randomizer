@@ -16,8 +16,20 @@
 	<!--https://vincentgarreau.com/particles.js/-->
 	<div id="particles-js"></div>
 	<script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-
 	<script src="particles.js"></script>
+	<script>
+		var max = 500; /*limit particles to prevent lags*/
+		var checkParticlesCount = function () {
+			if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
+				if (window.pJSDom[0].pJS.particles.array.length >= max) {
+					window.pJSDom[0].pJS.interactivity.modes.push.particles_nb = 0;
+				};
+			}
+			requestAnimationFrame(checkParticlesCount);
+		};
+		requestAnimationFrame(checkParticlesCount);
+		/*https://github.com/VincentGarreau/particles.js/issues/196*/
+	</script> 
 
 	<div id="page-content">
 		<div id="blocks">
@@ -41,40 +53,40 @@
 			</div>
 		</div>
 
-		
-			<div style="height:100vh;">
-				<!--empty space - screen height-->
-			</div>
 
-			<div class="settings" id="settings-content">
-				<!-- ustawienia wartości pól -->
-				<h2>Ustawienia</h2>
+		<div style="height:100vh;">
+			<!--empty space - screen height-->
+		</div>
 
-				<div>
-					Imiona w puli:
-					<div class="data_input" id="input1" contenteditable="true">example1, ex2</div>
-				</div><br>
+		<div class="settings" id="settings-content">
+			<!-- ustawienia wartości pól -->
+			<h2>Ustawienia</h2>
 
-				<div>
-					Wyzwania w puli:
-					<div class="data_input" id="input2" contenteditable="true">
-						example1, ex2
-					</div>
-				</div><br>
+			<div>
+				Imiona w puli:
+				<div class="data_input" id="input1" contenteditable="true">example1, ex2</div>
+			</div><br>
 
-				<div>
-					Pula dodatkowa 1:
-					<div class="data_input" id="input3" contenteditable="true">example1, ex2</div>
-				</div><br>
-
-				<div>
-					Pula dodatkowa 2:
-					<div class="data_input" id="input4" contenteditable="true">example1, ex2</div>
+			<div>
+				Wyzwania w puli:
+				<div class="data_input" id="input2" contenteditable="true">
+					example1, ex2
 				</div>
+			</div><br>
 
-				<sup><br>* pola rozdzielane są przez znak przecinka</sup>
+			<div>
+				Pula dodatkowa 1:
+				<div class="data_input" id="input3" contenteditable="true">example1, ex2</div>
+			</div><br>
+
+			<div>
+				Pula dodatkowa 2:
+				<div class="data_input" id="input4" contenteditable="true">example1, ex2</div>
 			</div>
-		
+
+			<sup><br>* pola rozdzielane są przez znak przecinka</sup>
+		</div>
+
 		<br><br>
 		<div class="stickyInfo" onclick="window.scrollTo(0, document.body.scrollHeight);">↕️ Przesuń by dostosować opcje
 			⤵️</div>
