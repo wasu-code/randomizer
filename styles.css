@@ -1,6 +1,7 @@
 body {
     background-color:#000000;
     /*background-image: url("https://pararium.com/wp-content/uploads/imgs/9/6/96227d63.gif");*/
+    background-image: url("/particles.png");
     color: whitesmoke;
     box-sizing: border-box;
 }
