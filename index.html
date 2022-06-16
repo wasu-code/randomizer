@@ -1,69 +1,85 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="description" content="Play Truth or Dare on your own rules.">
-  	<meta name="author" content="wasu">
+	<meta name="author" content="wasu">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="color-scheme" content="light only">
 	<title>Randomizer</title>
 	<link rel="icon" type="image/svg" href="https://twemoji.maxcdn.com/v/latest/svg/1f3b2.svg">
 	<link rel="stylesheet" href="styles.css">
 	<link rel="stylesheet" href="particles.css">
-	
+
 </head>
 
 <body>
-	<!-- particles.js container --> <div id="particles-js"></div> <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> 
-<!--https://vincentgarreau.com/particles.js/-->
-<script src="particles.js"></script>
-	
-<div id="page-content">
-	<div id="blocks">
-		<div class="block1 rotationX" id="container1" onclick="go(1,'X');"><div id="content1">Kliknij</div></div>
+	<!-- particles.js container -->
+	<!--https://vincentgarreau.com/particles.js/-->
+	<div id="particles-js"></div>
+	<script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 
-		<div class="block2 rotationY" id="container2" onclick="go(2,'Y');"><div id="content2">kliknij by wylosować</div></div>
+	<script src="particles.js"></script>
 
-		<br><br>
-
-		<div>
-			<div class="block3 rotationX" id="container3" onclick="go(3,'X');"><div id="content3">♀️</div></div>
-			<div class="block4 rotationX" id="container4" onclick="go(4,'X');"><div id="content4">♂️</div></div>
-		</div>
-	</div>	
-
-	<div style="height:100vh;"><!--empty space - screen height--></div>
-
-	<div class="settings"> <!-- ustawienia wartości pól -->
-		<h2>Ustawienia</h2>
-
-		<div> 
-			Imiona w puli:
-			<div class="data_input" id="input1" contenteditable="true">example1, ex2</div>
-		</div><br>
-		
-		<div> 
-			Wyzwania w puli:
-			<div class="data_input" id="input2" contenteditable="true">
-				example1, ex2
+	<div id="page-content">
+		<div id="blocks">
+			<div class="block1 rotationX" id="container1" onclick="go(1,'X');">
+				<div id="content1">Kliknij</div>
 			</div>
-		</div><br>
-		
-		<div> 
-			Pula dodatkowa 1:
-			<div class="data_input" id="input3" contenteditable="true">example1, ex2</div>
-		</div><br>
-		
-		<div> 
-			Pula dodatkowa 2:
-			<div class="data_input" id="input4" contenteditable="true">example1, ex2</div>
+
+			<div class="block2 rotationY" id="container2" onclick="go(2,'Y');">
+				<div id="content2">kliknij by wylosować</div>
+			</div>
+
+			<br><br>
+
+			<div>
+				<div class="block3 rotationX" id="container3" onclick="go(3,'X');">
+					<div id="content3">♀️</div>
+				</div>
+				<div class="block4 rotationX" id="container4" onclick="go(4,'X');">
+					<div id="content4">♂️</div>
+				</div>
+			</div>
 		</div>
 
-		<sup><br>* pola rozdzielane są przez znak przecinka</sup>
-	</div>
 		
-	<br><br>
-	<div class="stickyInfo" onclick="window.scrollTo(0, document.body.scrollHeight);">↕️ Przesuń by dostosować opcje ⤵️</div>
-</div>
-	
-<!-- skrypt do losowania zawartości pól -->
-<script src="scripts.js"></script>
+			<div style="height:100vh;">
+				<!--empty space - screen height-->
+			</div>
+
+			<div class="settings" id="settings-content">
+				<!-- ustawienia wartości pól -->
+				<h2>Ustawienia</h2>
+
+				<div>
+					Imiona w puli:
+					<div class="data_input" id="input1" contenteditable="true">example1, ex2</div>
+				</div><br>
+
+				<div>
+					Wyzwania w puli:
+					<div class="data_input" id="input2" contenteditable="true">
+						example1, ex2
+					</div>
+				</div><br>
+
+				<div>
+					Pula dodatkowa 1:
+					<div class="data_input" id="input3" contenteditable="true">example1, ex2</div>
+				</div><br>
+
+				<div>
+					Pula dodatkowa 2:
+					<div class="data_input" id="input4" contenteditable="true">example1, ex2</div>
+				</div>
+
+				<sup><br>* pola rozdzielane są przez znak przecinka</sup>
+			</div>
+		
+		<br><br>
+		<div class="stickyInfo" onclick="window.scrollTo(0, document.body.scrollHeight);">↕️ Przesuń by dostosować opcje
+			⤵️</div>
+	</div>
+
+	<!-- skrypt do losowania zawartości pól -->
+	<script src="scripts.js"></script>
 </body>
